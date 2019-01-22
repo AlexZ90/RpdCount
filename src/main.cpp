@@ -27,7 +27,8 @@ int main(int argc, char *argv[])
     }
     else
     {
-        databaseFilePath = "D://rpdCount_database.txt";
+        std::cout <<  "using: rpdCount rpdCount_database.txt" << std::endl;
+        exit -1;
     }
 
     fs.open (databaseFilePath, std::fstream::in | std::fstream::out);
